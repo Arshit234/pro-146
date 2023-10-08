@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <!-- Robot body -->
+        <a-box position="0 1 0" color="gray" scale="1 2 1"></a-box>
+
+        <!-- Robot head -->
+        <a-sphere position="0 3 0" radius="1" color="silver"></a-sphere>
+
+        <!-- Robot eyes -->
+        <a-sphere position="-0.5 3.5 -0.8" radius="0.1" color="black"></a-sphere>
+        <a-sphere position="0.5 3.5 -0.8" radius="0.1" color="black"></a-sphere>
+
+        <!-- Robot arms -->
+        <a-cylinder position="-1.2 2 0" rotation="0 0 90" radius="0.1" height="2" color="gray"></a-cylinder>
+        <a-cylinder position="1.2 2 0" rotation="0 0 90" radius="0.1" height="2" color="gray"></a-cylinder>
+
+        <!-- Robot legs -->
+        <a-cylinder position="-0.6 0.5 0" rotation="0 0 90" radius="0.2" height="1.5" color="gray"></a-cylinder>
+        <a-cylinder position="0.6 0.5 0" rotation="0 0 90" radius="0.2" height="1.5" color="gray"></a-cylinder>
+    </a-scene>
+</body>
+
+</html>
